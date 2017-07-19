@@ -18,8 +18,8 @@ driver.get('https://secure.advicepro.org.uk/v5alt/Home/Index')
 UserNameElements = driver.find_elements_by_id('UserName')
 
 if len(UserNameElements) > 0:
-    driver.find_element_by_id('UserName').send_keys('hnordgren')
-    driver.find_element_by_id('Password').send_keys('Advicepro4dvicepro')
+    driver.find_element_by_id('UserName').send_keys('')
+    driver.find_element_by_id('Password').send_keys('')
     driver.find_element_by_xpath('//*[@id="logonPanel"]/form/fieldset/p/input').click()
 
 errorsPage = driver.find_elements_by_class_name('validation-summary-errors')
